@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pedroarmas.controller.GradoController">
+   <children>
+      <Label layoutX="258.0" layoutY="14.0" text="Grados">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="67.0" text="Grado" />
+      <TextField fx:id="txtGrado" editable="false" layoutX="109.0" layoutY="63.0" />
+      <Label layoutX="301.0" layoutY="67.0" text="Sección" />
+      <TextField fx:id="txtSeccion" editable="false" layoutX="366.0" layoutY="63.0" />
+      <Label layoutX="38.0" layoutY="111.0" text="Modalidad" />
+      <TextField fx:id="txtModalidad" editable="false" layoutX="109.0" layoutY="107.0" />
+      <Label layoutX="301.0" layoutY="111.0" text="Jornada" />
+      <TextField fx:id="txtJornada" editable="false" layoutX="366.0" layoutY="107.0" />
+      <TableView fx:id="tblGrados" layoutX="14.0" layoutY="152.0" prefHeight="200.0" prefWidth="581.0">
+        <columns>
+          <TableColumn fx:id="colCodigoGrado" prefWidth="90.0" text="Codigo Grado" />
+          <TableColumn fx:id="colGrado" prefWidth="137.0" text="Grado" />
+            <TableColumn fx:id="colSeccion" prefWidth="64.0" text="Sección" />
+            <TableColumn fx:id="colModalidad" prefWidth="173.0" text="Modalidad" />
+            <TableColumn fx:id="colJornada" prefWidth="116.0" text="Jornada" />
+        </columns>
+         <effect>
+            <DropShadow height="71.41" radius="27.792499999999997" spread="0.2" width="41.76" />
+         </effect>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="29.0" layoutY="369.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="70.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="114.0" layoutY="369.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="70.0" text="Eliminar" />
+      <Button layoutX="199.0" layoutY="369.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="70.0" text="Editar" />
+      <Button layoutX="285.0" layoutY="369.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="70.0" text="Reporte" />
+   </children>
+   <effect>
+      <InnerShadow choke="0.38" color="#4d92c3" height="47.69" radius="26.2475" width="59.3" />
+   </effect>
+</AnchorPane>

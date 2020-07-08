@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <effect>
+      <InnerShadow choke="0.16" color="#79a8e1" height="83.27" radius="38.17" width="71.41" />
+   </effect>
+   <children>
+      <Label layoutX="250.0" layoutY="14.0" text="Calificación Bimestral">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="281.0" layoutY="469.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="70.0" text="Reporte" />
+      <Button layoutX="195.0" layoutY="469.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="70.0" text="Editar" />
+      <Button fx:id="btnEliminar" layoutX="110.0" layoutY="469.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="70.0" text="Eliminar" />
+      <Button fx:id="btnNuevo" layoutX="25.0" layoutY="469.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="70.0" text="Nuevo" />
+      <TableView fx:id="tblCalificaciones" layoutX="13.0" layoutY="252.0" prefHeight="200.0" prefWidth="714.0">
+         <columns>
+            <TableColumn fx:id="colCodigoBimestral" prefWidth="61.0" text="Código" />
+            <TableColumn fx:id="colNotaAcumulativa" prefWidth="125.0" text="Nota Acumulativa" />
+            <TableColumn prefWidth="130.0" text="Nota Evaluacion" />
+            <TableColumn prefWidth="147.0" text="Total Bimestre" />
+            <TableColumn prefWidth="120.0" text="Codigo Alumno" />
+            <TableColumn prefWidth="130.0" text="Codigo Asignatura" />
+         </columns>
+         <effect>
+            <DropShadow height="71.41" radius="27.792499999999997" spread="0.2" width="41.76" />
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>
